@@ -12,12 +12,20 @@ import { CookieService } from 'ngx-cookie-service';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { WidgetComponent } from './SharedComponents/widget/widget.component';
 import { PricingComponent } from './SharedComponents/pricing/pricing.component';
+import { ServiceComponent } from './SharedComponents/service/service.component';
+import { ContactComponent } from './SharedComponents/contact/contact.component';
+import { WorkComponent } from './SharedComponents/work/work.component';
+import { HomeComponent } from './SharedComponents/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WidgetComponent,
     PricingComponent,
+    ServiceComponent,
+    ContactComponent,
+    WorkComponent,
+    HomeComponent,
   ],
   imports: [
     HttpClientModule,

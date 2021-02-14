@@ -1,5 +1,6 @@
 .example-spacer {
   flex: 1 1 auto;
+  z-index: 20;
 }
 .spacing {
   padding: 0px 10px 0px 10px;
@@ -11,7 +12,8 @@
   /* border: 1px solid #555; */
 }
 mat-drawer {
-  width: 280px;z-index: 20;
+  width: 280px;
+  z-index: 20 !important;
 }
 /* .mat-toolbar-row, .mat-toolbar-single-row {
       height: 50px;
@@ -22,11 +24,12 @@ mat-drawer {
     position: relative;
     max-height: 50px;
     min-height: 50px;
-    z-index: 20;
+    z-index: 200 !important;;
   }
   .mat-toolbar-tools {
     height: 50px;
-    max-height: 50px;z-index: 20;
+    max-height: 50px;
+    z-index: 200 !important;;
   }
 }
 

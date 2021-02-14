@@ -1,49 +1,55 @@
-.leftEdgeStyle {
-    border-left: 6px solid #3f51b5;
-    border-radius: 0px;
+.example-spacer {
+    flex: 1 1 auto;
   }
-  .leftEdge {
-    border-radius: 0px;
-    display: flex;
-    align-items: center; /* <---- NEW    */
-    justify-content: center;
-    color: #505470;
-    font-size: 50px;
-    background-color: whitesmoke;
+  .drawer-container {
+    width: 100%;
+    height: 100%;
+    /* margin: 12px; */
+    /* border: 1px solid #555; */
   }
-  .leftEdge mat-card-content h1 {
-    font-size: 40px;
+  mat-drawer {
+    width: 240px;
   }
-  .leftEdge {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+  /* .mat-toolbar-row, .mat-toolbar-single-row {
+        height: 50px;
+    } */
   
-  .rightEdgeStyle {
-    border-right: 6px solid #3f51b5;
-    border-radius: 0px;
+  @media (min-width: 0) and (orientation: landscape) {
+    mat-toolbar {
+      position: relative;
+      max-height: 50px;
+      min-height: 50px;
+    }
+    .mat-toolbar-tools {
+      height: 50px;
+      max-height: 50px;
+    }
   }
-  .rightEdge {
-    border-radius: 0px;
+
+  .Edges {
+    border-radius:5px 5px 0px 0px;
+    display: flex;
+    align-items: center; /* <---- NEW    */
+    justify-content: center;  
+  }
+
+  .buttomDiv{
+    border-radius: 0px 0px 5px 5px;
     display: flex;
     align-items: center; /* <---- NEW    */
     justify-content: center;
-    color: #505470;
-    font-size: 50px;
+    color: #505470; 
     background-color: whitesmoke;
-  }
-  .rightEdge mat-card-content h1 {
-    font-size: 40px;
-  }
-  .rightEdge {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    max-height: 70px;
+    min-height: 50px;
   }
   .svgBackground2 {
     // background-image: url(../assets/images/backgrnd2.svg);
     background-color: whitesmoke;
-    min-height:20vh;
+    min-height: 90vh;
     padding-left: 20px;
     padding-right: 20px;
   }
+
+
   
