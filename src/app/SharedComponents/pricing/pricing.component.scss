@@ -26,7 +26,12 @@ mat-drawer {
   }
 }
 
-.Edges {
+.EdgesB {
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  align-items: center; /* <---- NEW    */
+  justify-content: center;
+}.Edges {
   border-radius: 5px 5px 0px 0px;
   display: flex;
   align-items: center; /* <---- NEW    */
@@ -57,4 +62,5 @@ mat-drawer {
 
 .myCard:hover {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }

@@ -14,6 +14,9 @@ import { ServiceComponent } from './SharedComponents/service/service.component';
 import { ContactComponent } from './SharedComponents/contact/contact.component';
 import { WorkComponent } from './SharedComponents/work/work.component';
 import { HomeComponent } from './SharedComponents/home/home.component';
+import { NotFound404Component } from './not-found404/not-found404.component';
+import { LockComponent } from './lock/lock.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { HomeComponent } from './SharedComponents/home/home.component';
     ContactComponent,
     WorkComponent,
     HomeComponent,
+    NotFound404Component,
+    LockComponent,
+    LoginComponent,
   ],
   imports: [
     HttpClientModule,

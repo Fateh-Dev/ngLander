@@ -96,7 +96,6 @@
         <button
           mat-icon-button
           class="example-icon"
-          [matMenuTriggerFor]="notification"
           aria-label="Example icon-button with menu icon"
         >
           <mat-icon matBadge="2" matBadgeSize="small" matBadgeColor="warn"
@@ -126,14 +125,6 @@
           <button mat-menu-item (click)="changeDirection('rtl', 'ar')">
             العربية
           </button>
-        </mat-menu>
-        <mat-menu #notification="matMenu">
-          <div
-            class="notificationDiv"
-            style="border-left: solid 4px rgb(87, 241, 87)"
-          >
-            Notifications
-          </div>
         </mat-menu>
         <mat-menu #profil="matMenu">
           <button mat-menu-item>
@@ -170,7 +161,6 @@
         fxLayout="column"
         fxLayout.sm="column"
         fxLayout.xs="column"
-        style="background-color: whitesmoke"
       >
         <span fxFlex> <h1 class="sections">Our Services</h1></span
         ><span #service id="service"
@@ -200,7 +190,6 @@
           fxLayout="column"
           fxLayout.sm="column"
           fxLayout.xs="column"
-          style="background-color: whitesmoke"
         >
           <span fxFlex> <h1 class="sections">Contact Us</h1></span
           ><span #contact id="contact"
