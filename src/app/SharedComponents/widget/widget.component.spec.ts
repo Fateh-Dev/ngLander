@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataListeHeaderComponent } from './data-liste-header.component';
+import { WidgetComponent } from './widget.component';
 
-describe('DataListeHeaderComponent', () => {
-  let component: DataListeHeaderComponent;
-  let fixture: ComponentFixture<DataListeHeaderComponent>;
+describe('WidgetComponent', () => {
+  let component: WidgetComponent;
+  let fixture: ComponentFixture<WidgetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataListeHeaderComponent ]
+      declarations: [ WidgetComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataListeHeaderComponent);
+    fixture = TestBed.createComponent(WidgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

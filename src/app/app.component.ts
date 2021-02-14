@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
@@ -10,6 +10,19 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  @ViewChild('work') public work!:ElementRef;
+  @ViewChild('pricing') public pricing!:ElementRef;
+  goToWork(){
+    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  } goUp(){
+    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  } goToPricing(){
+    this.pricing.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  } goToService(){
+    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  } goToContact(){
+    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  }
   title = 'Project Title';
   public direction: any;
   showNavigation = true;

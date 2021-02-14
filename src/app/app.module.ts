@@ -10,16 +10,14 @@ import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CookieService } from 'ngx-cookie-service';
 import { MatPaginatorIntl } from '@angular/material/paginator';
-import { DataSummaryComponent } from './SharedComponents/data-summary/data-summary.component';
-import { DataSummaryHeaderComponent } from './SharedComponents/data-summary-header/data-summary-header.component';
-import { DataListeHeaderComponent } from './SharedComponents/data-liste-header/data-liste-header.component';
+import { WidgetComponent } from './SharedComponents/widget/widget.component';
+import { PricingComponent } from './SharedComponents/pricing/pricing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataSummaryComponent,
-    DataSummaryHeaderComponent,
-    DataListeHeaderComponent,
+    WidgetComponent,
+    PricingComponent,
   ],
   imports: [
     HttpClientModule,
