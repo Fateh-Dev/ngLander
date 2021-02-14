@@ -39,7 +39,16 @@ mat-drawer {
   align-items: center; /* <---- NEW    */
   justify-content: center;
 }
-
+p{
+  padding: 0px 20px; font-size: 20px
+}
+.sections{
+  padding-top: 40px;
+  color: rgb(32, 31, 31);
+  margin: 24px;
+  font-size: 40px;
+  font-weight: 900;
+}
 .mat-card-avatar-small {
   background-image: url("../assets/images/user.png");
   background-size: cover;
@@ -75,10 +84,6 @@ mat-drawer {
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
-}
-.svgBackground {
-  background-image: url(../assets/images/Endless-Constellation.svg);
-  min-height: 100vh;
 }
 .svgBackground2 {
   // background-image: url(../assets/images/backgrnd2.svg);

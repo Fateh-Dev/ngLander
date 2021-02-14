@@ -30,13 +30,13 @@
         <div>{{ "work" | translate }}</div>
         <mat-icon mat-list-icon>settings</mat-icon>
       </mat-list-option>
-      <mat-list-option (click)="goToPricing()">
-        <div>{{ "pricing" | translate }}</div>
-        <mat-icon mat-list-icon>settings</mat-icon>
-      </mat-list-option>
       <mat-list-option (click)="goToService()">
         <div>{{ "service" | translate }}</div>
         <mat-icon mat-list-icon>info</mat-icon>
+      </mat-list-option>
+      <mat-list-option (click)="goToPricing()">
+        <div>{{ "pricing" | translate }}</div>
+        <mat-icon mat-list-icon>settings</mat-icon>
       </mat-list-option>
       <mat-list-option (click)="goToContact()">
         <div>{{ "contact" | translate }}</div>
@@ -63,16 +63,24 @@
           <mat-icon>{{ panelOpenState ? "menu" : "menu" }}</mat-icon>
         </button>
 
-        <span style="padding-left: 20px">{{ "titreProject" | translate }}</span>
+        <span style="padding-left: 20px;cursor: pointer;" (click)="goUp()">{{ "titreProject" | translate }}</span>
         <span class="example-spacer"></span>
         <div fxShow="true" fxHide.lt-md="true">
-          <span class="toolbarSpan" (click)="goUp()"> {{ "accueil" | translate }}</span>
+          <span class="toolbarSpan" (click)="goUp()">
+            {{ "accueil" | translate }}</span
+          >
           <span class="toolbarSpan" (click)="goToWork()">
             {{ "work" | translate }}</span
           >
-          <span class="toolbarSpan" (click)="goToPricing()"> {{ "pricing" | translate }}</span>
-          <span class="toolbarSpan" (click)="goToService()"> {{ "service" | translate }}</span>
-          <span class="toolbarSpan" (click)="goToContact()"> {{ "contact" | translate }}</span>
+          <span class="toolbarSpan" (click)="goToService()">
+            {{ "service" | translate }}</span
+          >
+          <span class="toolbarSpan" (click)="goToPricing()">
+            {{ "pricing" | translate }}</span
+          >
+          <span class="toolbarSpan" (click)="goToContact()">
+            {{ "contact" | translate }}</span
+          >
           <span class="example-spacer"></span>
         </div>
 
@@ -141,144 +149,68 @@
         </mat-menu>
       </mat-toolbar-row>
     </mat-toolbar>
-    <div>
-      <div fxLayout="column" class="svgBackground">
-        <div
-          fxLayout="row"
-          fxLayout.sm="column"
-          fxLayout.xs="column"
-          style="padding-top: 80px"
-          fxLayoutAlign="space-around center"
-        >
-          <div fxFlex style="padding: 20px">
-            <h1
-              style="
-                color: lavender;
-                margin: 0 0 24px;
-                font-size: 4vw;
-                font-weight: 900;
-                line-height: 52px;
-                text-shadow: 0 4px 4px rgb(0 0 0 / 22%);
-              "
-            >
-              NgLander single page App
-            </h1>
-            <h2
-              style="
-                color: lavender;
-                margin-left: 40px;
-                text-shadow: 0 4px 4px rgb(0 0 0 / 22%);
-              "
-            >
-              Multiple Languages at same time
-            </h2>
-            <h2
-              style="
-                color: lavender;
-                margin-left: 40px;
-                text-shadow: 0 4px 4px rgb(0 0 0 / 22%);
-              "
-            >
-              Support left to Right and Right to left direction
-            </h2>
-            <h2
-              style="
-                color: lavender;
-                margin-left: 40px;
-                text-shadow: 0 4px 4px rgb(0 0 0 / 22%);
-              "
-            >
-              Resposive to mobile view
-            </h2>
-          </div>
-          <div fxFlex>
-            <img src="../assets/images/pc.png" width="100%" />
-          </div>
-        </div>
-        <div
-          fxLayout="row"
-          fxLayout.sm="column"
-          fxLayout.xs="column"
-          fxLayoutAlign="start center"
-          fxLayoutGap="30px"
-          style="padding: 20px"
-        >
-          <div fxFlex="25%" fxFlexFill>
-            <button
-              mat-raised-button
-              fxFlexFill
-              color="accent"
-              style="padding: 10px 0px 10px 0px"
-            >
-              $BUY
-            </button>
-          </div>
-          <div fxFlex="25%" fxFlexFill>
-            <button
-              mat-raised-button
-              fxFlexFill
-              color="primary"
-              style="background-color: #414d9c; padding: 10px 0px 10px 0px"
-            >
-              FREE TRIAL
-            </button>
-          </div>
-        </div>
-      </div>
+    <div #up id="up">
+      <app-home></app-home>
       <div
-        #work
-        id="work"
         fxLayout="column"
         fxLayout.sm="column"
         fxLayout.xs="column"
         style="background-color: whitesmoke"
       >
-        <span fxFlex>
-          <h1
-            style="
-              padding-top: 40px;
-              color: rgb(32, 31, 31);
-              margin: 24px;
-              font-size: 40px;
-              font-weight: 900;
-            "
-          >
-            Our Work
-          </h1></span
-        ><span style="padding: 20px;font-size: 20px;"
-          ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde
-          inventore molestias ab adipisci eius nisi placeat at.</p></span
+        <span fxFlex> <h1 class="sections">Our Work</h1></span
+        ><span #work id="work"
+          ><p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            unde inventore molestias ab adipisci eius nisi placeat at.
+          </p></span
         >
       </div>
-      <div style="background-color: whitesmoke">
-        <app-widget></app-widget>
-      </div>
+      <app-work></app-work>
       <div
-        #pricing
-        id="pricing"
-        fxLayout="row"
+        fxLayout="column"
         fxLayout.sm="column"
         fxLayout.xs="column"
         style="background-color: whitesmoke"
       >
-        <span fxFlex>
-          <h1
-            style="
-              padding-top: 40px;
-              color: rgb(32, 31, 31);
-              margin: 24px;
-              font-size: 40px;
-              font-weight: 900;
-            "
-          >
-            Our Pricings
-          </h1></span
+        <span fxFlex> <h1 class="sections">Our Services</h1></span
+        ><span #service id="service"
+          ><p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            unde inventore molestias ab adipisci eius nisi placeat at.
+          </p></span
         >
       </div>
-
-      <div style="background-color: whitesmoke">
+        <app-service></app-service>
+        <div
+          fxLayout="column"
+          fxLayout.sm="column"
+          fxLayout.xs="column"
+          style="background-color: whitesmoke"
+        >
+          <span fxFlex> <h1 class="sections">Our Pricings</h1></span
+          ><span #pricing id="pricing"
+            ><p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+              unde inventore molestias ab adipisci eius nisi placeat at.
+            </p></span
+          >
+        </div>
         <app-pricing></app-pricing>
-      </div>
+        <div
+          fxLayout="column"
+          fxLayout.sm="column"
+          fxLayout.xs="column"
+          style="background-color: whitesmoke"
+        >
+          <span fxFlex> <h1 class="sections">Contact Us</h1></span
+          ><span #contact id="contact"
+            ><p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+              unde inventore molestias ab adipisci eius nisi placeat at.
+            </p></span
+          >
+        </div>
+        <app-contact></app-contact>
     </div>
   </div>
 </mat-drawer-container>

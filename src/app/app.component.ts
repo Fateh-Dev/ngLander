@@ -1,5 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
@@ -10,18 +16,45 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  @ViewChild('work') public work!:ElementRef;
-  @ViewChild('pricing') public pricing!:ElementRef;
-  goToWork(){
-    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-  } goUp(){
-    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-  } goToPricing(){
-    this.pricing.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-  } goToService(){
-    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-  } goToContact(){
-    this.work.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  @ViewChild('work') public work!: ElementRef;
+  @ViewChild('pricing') public pricing!: ElementRef;
+  @ViewChild('up') public up!: ElementRef;
+  @ViewChild('service') public service!: ElementRef;
+  @ViewChild('contact') public contact!: ElementRef;
+  goToWork() {
+    this.work.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goUp() {
+    this.up.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goToPricing() {
+    this.pricing.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goToService() {
+    this.service.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goToContact() {
+    this.contact.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
   }
   title = 'Project Title';
   public direction: any;

@@ -9,8 +9,6 @@ import { I18nModule } from './i18n/i18n.module';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CookieService } from 'ngx-cookie-service';
-import { MatPaginatorIntl } from '@angular/material/paginator';
-import { WidgetComponent } from './SharedComponents/widget/widget.component';
 import { PricingComponent } from './SharedComponents/pricing/pricing.component';
 import { ServiceComponent } from './SharedComponents/service/service.component';
 import { ContactComponent } from './SharedComponents/contact/contact.component';
@@ -20,7 +18,6 @@ import { HomeComponent } from './SharedComponents/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    WidgetComponent,
     PricingComponent,
     ServiceComponent,
     ContactComponent,
