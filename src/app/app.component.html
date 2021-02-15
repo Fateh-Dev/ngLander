@@ -48,7 +48,7 @@
     <mat-toolbar
       color="primary"
       class="mat-elevation-z8"
-      style="position: fixed; background-color: #242d66"
+      style="position: fixed; background-color: #242d66;z-index: 100;"
     >
       <mat-toolbar-row>
         <button
@@ -205,5 +205,6 @@
       <app-login></app-login>
     </div>
     <div style="min-height: 100vh" #lock id="lock"><app-lock></app-lock></div>
+    <div style="min-height: 30vh;padding: 40px;color: white;" #footer id="footer" class="svgBackground" ><app-footer></app-footer></div>
   </div>
 </mat-drawer-container>
