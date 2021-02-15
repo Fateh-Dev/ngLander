@@ -18,5 +18,21 @@
   "user": "المستخدم",
   "disconnect": "الخروج",
   "profile": "بروفايل",
-  "lock": "إغلاق"
+  "lock": "إغلاق",
+  "password": "كلمة السر",
+  "signin": "دخول",
+  "username": "اسم المستخدم",
+  "freetrial":"نسخة تجريبية ",
+  "buy":"شراء",
+  "our work":"أعمالنا",
+  "our service":"خدماتنا",
+  "our pricing":"أسعارنا",
+  "contact us":"إتصل بنا",
+  "like":"إعجاب",
+  "share":"مشاركة",
+  "full name":"الإسم الكامل",
+  "email":"البريد الالكتروني",
+  "subject":"الموضوع",
+  "send":"إرسال",
+  "message":"الرسالة"
 }

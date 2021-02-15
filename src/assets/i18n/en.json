@@ -20,5 +20,18 @@
   "signin": "Sign In",
   "password": "Password",
   "username": "Username",
-  "lock": "Lock"
+  "lock": "Lock",
+  "freetrial":"FREE TRIAL",
+  "buy":"BUY",
+  "our work":"Our Work",
+  "our service":"Our Services",
+  "our pricing":"Our Pricings",
+  "contact us":"Contact Us",
+  "like":"Like",
+  "share":"Share",
+  "full name":"Full name",
+  "email":"Email",
+  "subject":"Subject",
+  "send":"Send",
+  "message":"Message"
 }
