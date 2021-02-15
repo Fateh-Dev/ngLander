@@ -63,7 +63,9 @@
           <mat-icon>{{ panelOpenState ? "menu" : "menu" }}</mat-icon>
         </button>
 
-        <span style="padding-left: 20px;cursor: pointer;" (click)="goUp()">{{ "titreProject" | translate }}</span>
+        <span style="padding-left: 20px; cursor: pointer" (click)="goUp()">{{
+          "titreProject" | translate
+        }}</span>
         <span class="example-spacer"></span>
         <div fxShow="true" fxHide.lt-md="true">
           <span class="toolbarSpan" (click)="goUp()">
@@ -80,6 +82,9 @@
           >
           <span class="toolbarSpan" (click)="goToContact()">
             {{ "contact" | translate }}</span
+          >
+          <span class="toolbarSpan" (click)="goTo404()">
+            404 Error</span
           >
           <span class="example-spacer"></span>
         </div>
@@ -127,13 +132,13 @@
           </button>
         </mat-menu>
         <mat-menu #profil="matMenu">
-          <button mat-menu-item>
+          <button mat-menu-item >
             <mat-icon>assignment_ind</mat-icon>{{ "profile" | translate }}
           </button>
-          <button mat-menu-item>
+          <button mat-menu-item (click)="goToLock()">
             <mat-icon>lock</mat-icon>{{ "lock" | translate }}
           </button>
-          <button mat-menu-item>
+          <button mat-menu-item (click)="goToLogin()">
             <mat-icon>power_settings_new</mat-icon
             >{{ "disconnect" | translate }}
           </button>
@@ -157,11 +162,7 @@
         >
       </div>
       <app-work></app-work>
-      <div
-        fxLayout="column"
-        fxLayout.sm="column"
-        fxLayout.xs="column"
-      >
+      <div fxLayout="column" fxLayout.sm="column" fxLayout.xs="column">
         <span fxFlex> <h1 class="sections">Our Services</h1></span
         ><span #service id="service"
           ><p>
@@ -170,36 +171,39 @@
           </p></span
         >
       </div>
-        <app-service></app-service>
-        <div
-          fxLayout="column"
-          fxLayout.sm="column"
-          fxLayout.xs="column"
-          style="background-color: whitesmoke"
+      <app-service></app-service>
+      <div
+        fxLayout="column"
+        fxLayout.sm="column"
+        fxLayout.xs="column"
+        style="background-color: whitesmoke"
+      >
+        <span fxFlex> <h1 class="sections">Our Pricings</h1></span
+        ><span #pricing id="pricing"
+          ><p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            unde inventore molestias ab adipisci eius nisi placeat at.
+          </p></span
         >
-          <span fxFlex> <h1 class="sections">Our Pricings</h1></span
-          ><span #pricing id="pricing"
-            ><p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              unde inventore molestias ab adipisci eius nisi placeat at.
-            </p></span
-          >
-        </div>
-        <app-pricing></app-pricing>
-        <div
-          fxLayout="column"
-          fxLayout.sm="column"
-          fxLayout.xs="column"
+      </div>
+      <app-pricing></app-pricing>
+      <div fxLayout="column" fxLayout.sm="column" fxLayout.xs="column">
+        <span fxFlex> <h1 class="sections">Contact Us</h1></span
+        ><span #contact id="contact"
+          ><p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            unde inventore molestias ab adipisci eius nisi placeat at.
+          </p></span
         >
-          <span fxFlex> <h1 class="sections">Contact Us</h1></span
-          ><span #contact id="contact"
-            ><p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              unde inventore molestias ab adipisci eius nisi placeat at.
-            </p></span
-          >
-        </div>
-        <app-contact></app-contact>
+      </div>
+      <app-contact></app-contact>
     </div>
+    <div style="min-height: 100vh" #notFound404 id="notFound404">
+      <app-not-found404></app-not-found404>
+    </div>
+    <div style="min-height: 100vh" #login id="login">
+      <app-login></app-login>
+    </div>
+    <div style="min-height: 100vh" #lock id="lock"><app-lock></app-lock></div>
   </div>
 </mat-drawer-container>

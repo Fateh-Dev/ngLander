@@ -17,6 +17,7 @@ import { HomeComponent } from './SharedComponents/home/home.component';
 import { NotFound404Component } from './not-found404/not-found404.component';
 import { LockComponent } from './lock/lock.component';
 import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './SharedComponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LoginComponent } from './login/login.component';
     NotFound404Component,
     LockComponent,
     LoginComponent,
+    FooterComponent,
   ],
   imports: [
     HttpClientModule,

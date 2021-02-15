@@ -18,5 +18,8 @@
   "user": "Utilisateur",
   "disconnect": "Se deconnecter",
   "profile": "Profile",
+  "password": "Mot de passe",
+  "signin": "Se Connecter",
+  "username": "Nom d'utilisateur",
   "lock": "Verouiller"
 }

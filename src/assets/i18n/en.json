@@ -17,5 +17,8 @@
   "rg": "General Check",
   "disconnect": "Logout",
   "profile": "Profile",
+  "signin": "Sign In",
+  "password": "Password",
+  "username": "Username",
   "lock": "Lock"
 }

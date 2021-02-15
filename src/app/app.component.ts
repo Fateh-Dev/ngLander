@@ -21,6 +21,30 @@ export class AppComponent {
   @ViewChild('up') public up!: ElementRef;
   @ViewChild('service') public service!: ElementRef;
   @ViewChild('contact') public contact!: ElementRef;
+  @ViewChild('login') public login!: ElementRef;
+  @ViewChild('lock') public lock!: ElementRef;
+  @ViewChild('notFound404') public notFound404!: ElementRef;
+  goToLogin() {
+    this.login.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goToLock() {
+    this.lock.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
+  goTo404() {
+    this.notFound404.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  }
   goToWork() {
     this.work.nativeElement.scrollIntoView({
       behavior: 'smooth',
